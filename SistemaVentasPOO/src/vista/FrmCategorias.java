@@ -1,7 +1,6 @@
 package vista;
 
 import controlador.CategoriaControlador;
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
@@ -10,7 +9,6 @@ import java.awt.Insets;
 import java.util.ArrayList;
 import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 import modelo.Categoria;
 import util.EstiloUI;
@@ -22,11 +20,23 @@ public class FrmCategorias extends javax.swing.JFrame {
 
     public FrmCategorias() {
         initComponents();
+        aplicarEstilos();
         setLocationRelativeTo(null);
-        setTitle("Gestión de Categorías");
         prepararTabla();
         listarCategorias();
         limpiarFormulario();
+    }
+
+    /**
+     * Mantiene el código de apariencia fuera de initComponents(), para que
+     * NetBeans no lo elimine cuando se modifica el formulario desde Diseño.
+     */
+    private void aplicarEstilos() {
+        setTitle("Gestión de Categorías");
+        btnGuardar.setBackground(EstiloUI.VERDE);
+        btnGuardar.setForeground(Color.WHITE);
+        btnEliminar.setBackground(EstiloUI.ROJO);
+        btnEliminar.setForeground(Color.WHITE);
     }
 
     private void prepararTabla() {
@@ -122,14 +132,10 @@ public class FrmCategorias extends javax.swing.JFrame {
         btnNuevo.setText("Nuevo");
         btnNuevo.addActionListener(evt -> btnNuevoActionPerformed(evt));
         btnGuardar.setText("Guardar");
-        btnGuardar.setBackground(EstiloUI.VERDE);
-        btnGuardar.setForeground(Color.WHITE);
         btnGuardar.addActionListener(evt -> btnGuardarActionPerformed(evt));
         btnActualizar.setText("Actualizar");
         btnActualizar.addActionListener(evt -> btnActualizarActionPerformed(evt));
         btnEliminar.setText("Eliminar");
-        btnEliminar.setBackground(EstiloUI.ROJO);
-        btnEliminar.setForeground(Color.WHITE);
         btnEliminar.addActionListener(evt -> btnEliminarActionPerformed(evt));
         btnVolver.setText("Volver");
         btnVolver.addActionListener(evt -> btnVolverActionPerformed(evt));
@@ -149,18 +155,41 @@ public class FrmCategorias extends javax.swing.JFrame {
         scrCategorias.setViewportView(tblCategorias);
         lblEstado.setText(" ");
 
-        JPanel contenido = new JPanel(new BorderLayout(0, 8));
-        contenido.setBorder(BorderFactory.createEmptyBorder(12, 20, 12, 20));
-        contenido.add(pnlDatos, BorderLayout.NORTH);
-        contenido.add(scrCategorias, BorderLayout.CENTER);
-        JPanel inferior = new JPanel(new BorderLayout());
-        inferior.add(pnlAcciones, BorderLayout.NORTH);
-        inferior.add(lblEstado, BorderLayout.SOUTH);
-        contenido.add(inferior, BorderLayout.SOUTH);
-
-        getContentPane().setLayout(new BorderLayout());
-        getContentPane().add(pnlTitulo, BorderLayout.NORTH);
-        getContentPane().add(contenido, BorderLayout.CENTER);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlTitulo, javax.swing.GroupLayout.DEFAULT_SIZE,
+                    javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnlDatos, javax.swing.GroupLayout.DEFAULT_SIZE,
+                            javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlAcciones, javax.swing.GroupLayout.DEFAULT_SIZE,
+                            javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(scrCategorias)
+                    .addComponent(lblEstado, javax.swing.GroupLayout.DEFAULT_SIZE,
+                            javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(20, 20, 20))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(pnlTitulo, javax.swing.GroupLayout.PREFERRED_SIZE,
+                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(pnlDatos, javax.swing.GroupLayout.PREFERRED_SIZE,
+                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(pnlAcciones, javax.swing.GroupLayout.PREFERRED_SIZE, 42,
+                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(scrCategorias, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
+                .addGap(8, 8, 8)
+                .addComponent(lblEstado)
+                .addGap(12, 12, 12))
+        );
         pack();
     }// </editor-fold>//GEN-END:initComponents
 

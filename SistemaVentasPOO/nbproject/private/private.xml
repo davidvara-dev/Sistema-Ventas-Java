@@ -5,20 +5,30 @@
         <group>
             <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/controlador/VentaControlador.java</file>
             <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/controlador/ReporteControlador.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmProductos.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmClientes.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmLogin.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmDetalleVenta.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmCategorias.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/dao/ClienteDAO.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/app/Main.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/modelo/Cliente.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/util/EstiloUI.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmPrincipal.java</file>
             <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmUsuarios.java</file>
             <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/conexion/Conexion.java</file>
-            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmClientes.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/modelo/Persona.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/util/ResultadoOperacion.java</file>
             <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/controlador/LoginControlador.java</file>
-            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmCategorias.java</file>
             <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/controlador/UsuarioControlador.java</file>
             <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmComprobante.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/dao/UsuarioDAO.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/modelo/DetalleVenta.java</file>
             <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/controlador/ClienteControlador.java</file>
-            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/app/Main.java</file>
-            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmReportes.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/util/Validaciones.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/modelo/Producto.java</file>
             <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/controlador/ProductoControlador.java</file>
-            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/util/EstiloUI.java</file>
-            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmVentas.java</file>
-            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/vista/FrmPrincipal.java</file>
+            <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/modelo/Usuario.java</file>
             <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/controlador/CategoriaControlador.java</file>
             <file>file:/C:/Users/David/Desktop/utp/Ciclo%20IV/POO/Sistema%20de%20Ventas/SistemaVentasPOO/src/dao/CategoriaDAO.java</file>
         </group>
